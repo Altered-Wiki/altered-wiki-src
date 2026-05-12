@@ -1,0 +1,6 @@
+{
+    "modules/legal-status.lua":        "Module:LegalStatus",
+    "common/common.css":               "MediaWiki:Common.css",
+    "common/common.js":                "MediaWiki:Common.js",
+    "templates/substance.wikitext":    "Template:Substance"
+}

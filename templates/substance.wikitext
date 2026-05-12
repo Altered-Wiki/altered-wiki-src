@@ -1,0 +1,71 @@
+<noinclude>
+Infobox for substance articles. Automatically annotates the page with Semantic MediaWiki properties.
+
+<templatedata>
+{
+    "description": "Infobox for psychoactive substance articles.",
+    "params": {
+        "name": {
+            "label": "Name",
+            "description": "Display name. Defaults to page name.",
+            "type": "string",
+            "suggested": true
+        },
+        "image": {
+            "label": "Image",
+            "description": "Filename without the File: prefix.",
+            "type": "wiki-file-name",
+            "suggested": true
+        },
+        "image_caption": {
+            "label": "Image caption",
+            "type": "string"
+        },
+        "class": {
+            "label": "Substance class",
+            "description": "Pharmacological class, e.g. Benzodiazepine, Opioid, Stimulant.",
+            "type": "string",
+            "suggested": true
+        },
+        "prodrug_of": {
+            "label": "Prodrug of",
+            "description": "Active substance this is a prodrug of (bare name, no namespace).",
+            "type": "string"
+        },
+        "formula": {
+            "label": "Molecular formula",
+            "description": "Use <sub> tags for subscripts.",
+            "type": "string"
+        },
+        "molar_mass": {
+            "label": "Molar mass (g/mol)",
+            "type": "number"
+        },
+        "cas": {
+            "label": "CAS number",
+            "type": "string"
+        },
+        "iupac": {
+            "label": "IUPAC name",
+            "type": "string"
+        },
+        "smiles": {
+            "label": "SMILES",
+            "type": "string"
+        },
+    },
+    "format": "block"
+}
+</templatedata>
+</noinclude><includeonly>{{#if:{{{class|}}}|{{#set:Substance class={{{class|}}}}}}}{{#if:{{{prodrug_of|}}}|{{#set:Prodrug of={{{prodrug_of|}}}}}}}{{#if:{{{molar_mass|}}}|{{#set:Molar mass={{{molar_mass|}}}}}}}{{#if:{{{smiles|}}}|{{#set:SMILES={{{smiles|}}}}}}}{{#if:{{{iupac|}}}|{{#set:IUPAC name={{{iupac|}}}}}}}<table class="infobox-substance" style="float:right; clear:right; margin:0 0 1em 1.5em; width:280px; font-size:0.9em">
+<tr><th colspan="2" class="infobox-substance__title">{{{name|{{PAGENAME}}}}}</th></tr>
+{{#if:{{{image|}}}|<tr><td colspan="2" class="infobox-substance__image">[[File:{{{image}}}|250px|class=skin-invert-image|{{{image_caption|}}}]]</td></tr>{{#if:{{{image_caption|}}}|<tr><td colspan="2" class="infobox-substance__caption">{{{image_caption}}}</td></tr>}}}}
+{{#if:{{{class|}}}|<tr><th>Class</th><td>[[{{{class}}}]]</td></tr>}}
+{{#if:{{{prodrug_of|}}}|<tr><th>Prodrug of</th><td>[[Substance:{{{prodrug_of}}}|{{{prodrug_of}}}]]</td></tr>}}
+{{#if:{{{formula|}}}|<tr><th>Formula</th><td>{{{formula}}}</td></tr>}}
+{{#if:{{{molar_mass|}}}|<tr><th>Molar mass</th><td>{{{molar_mass}}} g/mol</td></tr>}}
+{{#if:{{{cas|}}}|<tr><th>CAS number</th><td>{{{cas}}}</td></tr>}}
+{{#if:{{{iupac|}}}|<tr><th>IUPAC name</th><td><small>{{{iupac}}}</small></td></tr>}}
+{{#if:{{{smiles|}}}|<tr><th>SMILES</th><td><small style="word-break:break-all">{{{smiles}}}</small></td></tr>}}
+
+</table></includeonly>

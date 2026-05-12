@@ -1,0 +1,196 @@
+.altered-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3em 1em 2.5em;
+    gap: 0.75em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.altered-hero__logo img {
+    width: 128px;
+    height: 128px;
+    filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.18));
+}
+
+.altered-hero__title {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.altered-hero__tagline {
+    font-size: 1.1em;
+    opacity: 0.75;
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+html.skin-theme-clientpref-night {
+    --filter-image-brightness: invert(1) hue-rotate(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+    html.skin-theme-clientpref-os {
+        --filter-image-brightness: invert(1) hue-rotate(180deg);
+    }
+}
+
+.infobox-substance {
+    float: right;
+    clear: right;
+    margin: 0 0 1em 1.5em;
+    width: 280px;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: var(--border-radius-medium, 4px);
+    background: var(--color-surface-0, #fff);
+}
+
+.infobox-substance th,
+.infobox-substance td {
+    border: 1px solid var(--border-color-base, #a2a9b1);
+}
+
+.infobox-substance__title {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+.infobox-substance__image {
+    text-align: center;
+    padding: 0.75em 0.5em 0.25em;
+}
+
+.infobox-substance__caption {
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--color-subtle, #72777d);
+    padding: 0 0.5em 0.5em;
+}
+
+.infobox-substance__section {
+    text-align: center;
+    font-weight: 600;
+    background: var(--background-color-interactive, #eaecf0);
+    padding: 0.3em 0.5em;
+}
+
+.infobox-substance th {
+    white-space: nowrap;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.25em 0.5em;
+    vertical-align: top;
+}
+
+.infobox-substance td {
+    padding: 0.25em 0.5em;
+    vertical-align: top;
+}
+
+@media (max-width: 720px) {
+    .infobox-substance {
+        float: none;
+        width: 100%;
+        margin: 0 0 1em 0;
+        box-sizing: border-box;
+    }
+}
+
+.legal-status-table {
+    border-collapse: collapse;
+    margin: 0.5em 0 1em;
+    font-size: 0.95em;
+    width: 100%;
+}
+
+.legal-status-table__heading {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.4em 0.6em;
+    border-bottom: 2px solid var(--border-color-base, #a2a9b1);
+}
+
+.legal-status-table tr {
+    border-bottom: 1px solid var(--border-color-base, #a2a9b1);
+}
+
+.legal-status-table td {
+    padding: 0.35em 0.6em;
+    vertical-align: middle;
+}
+
+.legal-status-table__country {
+    white-space: nowrap;
+    font-weight: 500;
+    width: 9em;
+}
+
+.legal-status-table__note {
+    font-size: 0.9em;
+    color: var(--color-subtle, #54595d);
+}
+
+.legal-status-badge {
+    display: inline-block;
+    padding: 0.15em 0.6em;
+    border-radius: 1em;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.legal-status-badge--unscheduled {
+    background: #d4edda;
+    color: #155724;
+}
+
+.legal-status-badge--scheduled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.legal-status-badge--grey {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.legal-status-badge--prescription {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.legal-status-badge--unknown {
+    background: var(--background-color-interactive, #eaecf0);
+    color: var(--color-subtle, #54595d);
+}
+
+.legal-status-search__input {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    margin: 0.5em 0 0.5em;
+    padding: 0.35em 0.7em;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: var(--border-radius-medium, 4px);
+    background: var(--color-surface-0, #fff);
+    color: inherit;
+    font-size: 0.95em;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.legal-status-search__input:focus {
+    border-color: var(--color-progressive, #3366cc);
+    box-shadow: 0 0 0 2px var(--color-progressive--focus, rgba(51, 102, 204, 0.25));
+}
