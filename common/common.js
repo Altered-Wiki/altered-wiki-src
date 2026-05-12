@@ -1,3 +1,7 @@
+// This file is managed by the altered-wiki-src repository.
+// Do not edit it directly on the wiki — changes will be overwritten on the next deploy.
+// https://github.com/altered-wiki/altered-wiki-src
+
 // Legal status table — live country filter
 mw.hook( 'wikipage.content' ).add( function ( $content ) {
     $content.find( '.legal-status-search' ).each( function () {

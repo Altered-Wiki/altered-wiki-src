@@ -1,3 +1,7 @@
+-- This file is managed by the altered-wiki-src repository.
+-- Do not edit it directly on the wiki — changes will be overwritten on the next deploy.
+-- https://github.com/altered-wiki/altered-wiki-src
+--
 -- Module:LegalStatus
 -- Renders a color-coded legal status table + choropleth map for substance articles.
 -- Usage in articles:
