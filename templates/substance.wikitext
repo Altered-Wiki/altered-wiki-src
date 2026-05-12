@@ -52,7 +52,7 @@ Infobox for substance articles. Automatically annotates the page with Semantic M
         "smiles": {
             "label": "SMILES",
             "type": "string"
-        },
+        }
     },
     "format": "block"
 }
