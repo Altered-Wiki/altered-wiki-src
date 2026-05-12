@@ -3,16 +3,6 @@
 Source files for the MediaWiki modules, templates, and styles powering
 [altered.wiki](https://altered.wiki).
 
-## Layout
-
-| File | Wiki page |
-|---|---|
-| `modules/legal-status.lua` | `Module:LegalStatus` |
-| `common/common.css` | `MediaWiki:Common.css` |
-| `common/common.js` | `MediaWiki:Common.js` |
-| `templates/substance.wikitext` | `Template:Substance` |
-| `templates/legal-status.wikitext` | `Template:Legal status` |
-
 ## Deployment
 
 Changes pushed to `main` are automatically synced to the wiki via the deploy
